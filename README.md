@@ -11,7 +11,7 @@ Analisis de respuesta a incidentes en tiempo real (Live Incident Response) sobre
 
 Estructura del repositorio
 
-ArchivoDescripcionInforme_Tecnico_Incident_Response_4Geeks_FINAL.docxInforme tecnico completo (~70 paginas) con evidencias, analisis y recomendacionesFase1_Hallazgos_RaulVelasquez.pptxPresentacion Fase 1 — Reconocimiento y HallazgosGuion_Presentacion_Fase1_RaulVelasquez.docxGuion de presentacion con comandos explicadosPASO*.pngCapturas de pantalla de evidencias del servidor comprometidoFASE 2/Documentacion de la Fase 2 — Remediacion y Restauracion
+ArchivoDescripcionInforme_Tecnico_Incident_Response_4Geeks_FINAL.docxInforme tecnico completo (72 paginas) con evidencias, analisis y recomendacionesFase1_Hallazgos_RaulVelasquez.pptxPresentacion Fase 1 — Reconocimiento y HallazgosGuion_Presentacion_Fase1_RaulVelasquez.docxGuion de presentacion con comandos explicados. PASO*.pngCapturas de pantalla de evidencias del servidor comprometidoFASE 2/Documentacion de la Fase 2 — Remediacion y Restauracion
 
 Fases del proyecto
 
