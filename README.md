@@ -1,57 +1,67 @@
-Proyecto Final — Live Incident Response
+# 🛡️ Final Project — Live Incident Response
 
-4Geeks Academy · Ciberseguridad · Junio 2026
+**4Geeks Academy · Cybersecurity · June 2026**
+Student: Raúl Velásquez
 
-Alumno: Raul J. Velasquez
+## 📋 Overview
 
+Live incident response analysis performed on a compromised Linux server. The goal was to identify, contain, and eradicate an active intrusion without interrupting the service.
 
-Descripcion
+---
 
-Analisis de respuesta a incidentes en tiempo real (Live Incident Response) sobre un servidor Linux comprometido. El objetivo fue identificar, contener y erradicar una intrusión activa sin interrumpir el servicio.
+## 🧭 Methodology
 
-Estructura del repositorio
+- **Approach:** Live Incident Response (LIR)
+- **Framework:** PICERL (Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned)
+- **MITRE ATT&CK Mapping:** T1566, T1059.004, T1136.001, T1053.003, T1048.003
 
-ArchivoDescripcionInforme_Tecnico_Incident_Response_4Geeks_FINAL.docxInforme tecnico completo (72 paginas) con evidencias, analisis y recomendacionesFase1_Hallazgos_RaulVelasquez.pptxPresentacion Fase 1 — Reconocimiento y HallazgosGuion_Presentacion_Fase1_RaulVelasquez.docxGuion de presentacion con comandos explicados. PASO*.pngCapturas de pantalla de evidencias del servidor comprometidoFASE 2/Documentacion de la Fase 2 — Remediacion y Restauracion
+---
 
-Fases del proyecto
+## 🔍 Phase 1 — Reconnaissance & Identification
 
-Fase 1 — Reconocimiento e Identificacion
+- ✅ System state analysis (uptime, RAM, kernel, network)
+- ✅ Detection of unauthorized users (`reports`, `hacker`)
+- ✅ Authentication log analysis (`auth.log`)
+- ✅ Identification of suspicious open ports (FTP port 21)
+- ✅ Evidence of social engineering (email phishing)
+- ✅ Discovery of a malicious cronjob (`backup2.sh`) exfiltrating credentials every 15 minutes
 
+## 🧯 Phase 2 — Containment, Eradication & Recovery
 
-Analisis del estado del sistema (uptime, RAM, kernel, red)
-Deteccion de usuarios no autorizados (reports, hacker)
-Analisis de logs de autenticacion (auth.log)
-Identificacion de puertos sospechosos (FTP puerto 21)
-Evidencia de ingenieria social (phishing por email)
-Descubrimiento de cronjob malicioso (backup2.sh) exfiltrando credenciales cada 15 minutos
+- ✅ Removal of backdoor user accounts
+- ✅ Removal of the malicious script and scheduled task
+- ✅ Firewall reconfiguration (UFW)
+- ✅ Rotation of compromised credentials
+- ✅ System integrity verification
 
+---
 
-Fase 2 — Contencion, Erradicacion y Recuperacion
+## 🎯 Key Findings
 
+| # | Finding |
+|---|---|
+| 1 | 2 unauthorized users created via social engineering and direct access |
+| 2 | Credential exfiltration via HTTP POST every 15 minutes for ~1 year |
+| 3 | Unauthorized active FTP service (port 21) |
+| 4 | Persistence via malicious cronjob (`/etc/cron.d/sys-maintenance`) |
 
-Eliminacion de usuarios backdoor
-Remocion del script malicioso y tarea programada
-Reconfiguracion del firewall (UFW)
-Cambio de credenciales comprometidas
-Verificacion de integridad del sistema
+---
 
+## 📁 Repository Structure
 
-Hallazgos principales
+| File | Description |
+|---|---|
+| `Informe_Tecnico_Incident_Response_4Geeks_FINAL.docx` | 📄 Full technical report (72 pages) with evidence, analysis, and recommendations |
+| `Fase1_Hallazgos_RaulVelasquez.pptx` | 🖥️ Phase 1 presentation — Reconnaissance & Findings |
+| `Guion_Presentacion_Fase1_RaulVelasquez.docx` | 📝 Presentation script with explained commands |
+| `PASO*.png` | 📸 Screenshots of evidence from the compromised server |
+| `FASE 2/` | 🧯 Phase 2 documentation — Remediation & Restoration |
 
+---
 
-2 usuarios no autorizados creados mediante ingenieria social y acceso directo
-Exfiltracion de credenciales via HTTP POST cada 15 minutos durante ~1 año
-Servicio FTP activo sin autorizacion (puerto 21)
-Persistencia via cronjob malicioso (/etc/cron.d/sys-maintenance)
+## 👤 Author
 
+**Raúl Velásquez**
 
-Metodologia
-
-
-Enfoque: Live Incident Response (LIR)
-Framework: PICERL (Preparacion, Identificacion, Contencion, Erradicacion, Recuperacion, Lecciones)
-Mapeo: MITRE ATT&CK (T1566, T1059.004, T1136.001, T1053.003, T1048.003)
-
-
-
-Proyecto academico — 4Geeks Academy · 2026
+---
+Academic project — 4Geeks Academy · 2026
